@@ -1,12 +1,6 @@
-import {configure} from '@gravity-ui/uikit';
 import React from 'react';
-import {createRoot} from 'react-dom/client';
-
-import {App} from '../components/App';
-
-configure({
-    lang: 'ru',
-});
+import { createRoot } from 'react-dom/client';
+import { App } from '../components/App';
 
 const rootEl = document.getElementById('root');
 

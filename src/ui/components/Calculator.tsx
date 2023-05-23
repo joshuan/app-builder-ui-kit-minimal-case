@@ -1,4 +1,3 @@
-import {TextInput} from '@gravity-ui/uikit';
 import React from 'react';
 
 export const Calculator = () => {
@@ -16,14 +15,14 @@ export const Calculator = () => {
         <fieldset>
             <legend>Calculator</legend>
             <p>
-                A: <TextInput type="number" value={String(a)} onChange={handleChangeA} />
+                A: <input type="number" value={String(a)} onChange={handleChangeA} />
             </p>
             <p>
-                B: <TextInput type="number" value={String(b)} onChange={handleChangeB} />
+                B: <input type="number" value={String(b)} onChange={handleChangeB} />
             </p>
             <hr />
             <p>
-                Result: <TextInput disabled value={String(a + b)} />
+                Result: <input disabled value={String(a + b)} />
             </p>
         </fieldset>
     );
