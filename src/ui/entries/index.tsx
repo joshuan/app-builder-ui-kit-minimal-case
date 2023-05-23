@@ -3,9 +3,7 @@ import React from 'react';
 import {createRoot} from 'react-dom/client';
 
 import {App} from '../components/App';
-import {i18n} from '../i18n';
 
-i18n.setLang('ru');
 configure({
     lang: 'ru',
 });
