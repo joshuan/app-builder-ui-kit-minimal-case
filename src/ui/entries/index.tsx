@@ -8,11 +8,9 @@ const container = document.getElementById('root');
 
 const root = createRoot(container);
 
-const SubmitButton = <Button view="action" size="l">I am button</Button>;
-
 root.render(
     <ThemeProvider theme="light">
         <h1>Hello from raect</h1>
-        <SubmitButton />
+        <Button view="action" size="l">I am button</Button>
     </ThemeProvider>
 );
