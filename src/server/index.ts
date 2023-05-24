@@ -1,12 +1,21 @@
-import {ExpressKit} from '@gravity-ui/expresskit';
-import {NodeKit} from '@gravity-ui/nodekit';
+const http = require('http');
 
-import routes from './routes';
-
-const nodekit = new NodeKit({
-    config: { appPort: 8080 },
+const server = http.createServer((req, res) => {
+    res.writeHead(200, { "Content-Type": "text/html" });
+    res.write(`
+        <html>
+            <body>
+                <h1>Hello World</h1>
+                <script src="/build/js/runtime.js"></script>
+                <script src="/build/js/index.js"></script>
+            </body>
+        </html>
+    `);
+    res.end();
 });
 
-const app = new ExpressKit(nodekit, routes);
+const port = process.env.APP_PORT || 80;
 
-app.run();
+server.listen(port, () => {
+    console.log(`Server is listening on port ${port}`);
+});

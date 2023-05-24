@@ -1,7 +1,6 @@
 {
-  "compilerOptions": {
-    "rootDir": ".",
-    "outDir": "../../dist/server",
-    "esModuleInterop": true
-  }
+    "compilerOptions": {
+        
+        "outDir": "../../dist/server"
+    }
 }
