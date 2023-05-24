@@ -5,7 +5,10 @@ const server = http.createServer((req, res) => {
     res.write(`
         <html>
             <body>
-                <h1>Hello World</h1>
+                <div id="root">
+                    <h1>Hello World</h1>
+                </div>
+                <script src="/build/js/vendors.js"></script>
                 <script src="/build/js/runtime.js"></script>
                 <script src="/build/js/index.js"></script>
             </body>
