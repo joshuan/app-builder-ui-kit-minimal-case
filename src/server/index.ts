@@ -4,7 +4,7 @@ import {NodeKit} from '@gravity-ui/nodekit';
 import routes from './routes';
 
 const nodekit = new NodeKit({
-    configsPath: './dist/configs',
+    config: { appPort: 8080 },
 });
 
 const app = new ExpressKit(nodekit, routes);
